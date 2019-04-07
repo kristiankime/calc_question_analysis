@@ -11,6 +11,11 @@ input_prefix <- "FIE-243diff"
 output_prefix <- "FIE-243diff"
 questions_location <- "data/questions/questions_details.243diff.csv"
 
+# attempts <- c(1:1)
+# input_prefix <- "FIE-243"
+# output_prefix <- "FIE-243"
+# questions_location <- "data/questions/questions_details.243.csv"
+
 initial_pfa_files(attempts, input_prefix, output_prefix, questions_location)
 pfa_coef_files(attempts, input_prefix, output_prefix)
 pfa_prediction_files(attempts, input_prefix, output_prefix)
