@@ -31,6 +31,10 @@ CALC$stats$func_bin_center <- function(bin_size=0.05, from=0.0, to=1.0) {
 
 CALC$stats$prob_accuracy_chisq_Q_val <- function(data, bin_size=0.05) {
   vals <- CALC$stats$prob_accuracy_chisq_data(data, bin_size = bin_size)
+  CALC$stats$prob_accuracy_chisq_Q_sum(vals)
+}
+
+CALC$stats$prob_accuracy_chisq_Q_sum <- function(vals) {
   sum(vals$C)
 }
 

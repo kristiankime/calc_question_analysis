@@ -16,7 +16,7 @@
  # install.packages("tidyverse")
  # install.packages("testthat")
 
-library('testthat')
+# library('testthat')
 library('tidyverse')
 library('data.table')
 library('stringr')
