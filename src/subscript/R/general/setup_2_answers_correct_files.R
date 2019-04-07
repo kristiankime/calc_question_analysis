@@ -1,28 +1,18 @@
-# # ===========================
-# # The "Inputs" to this file
-# # AKA parameters / input file Locations / output file locations
-# # ===========================
-# 
-# # --- parameters ---
-# # attempts <- c(1:6)
-# attempts <- c(1:1)
-# 
-# # --- input file Locations ---
-# answers_location <- LOC$answers_location
-# 
-# # --- output file Locations ---
-# answers_correct_location <- LOC$answers_correct_location
-# answers_correct_minimal_location <- LOC$answers_correct_minimal_location
-# answers_correct_attempts_location <- LOC$answers_correct_attempts_location
-# answers_correct_wide_location <- LOC$answers_correct_wide_location
+setup_answers_correct_files <- function(attempts = c(1:1)) {
+  # ===========================
+  # --- input file Locations ---
+  answers_location <- LOC$answers_location
 
-setup_answers_correct_files <- function(attempts,
-                                        answers_location,
-                                        answers_correct_location, 
-                                        answers_correct_minimal_location,
-                                        answers_correct_attempts_location,
-                                        answers_correct_wide_location) {
-
+  # --- output file Locations ---
+  answers_correct_location <- LOC$answers_correct_location
+  answers_correct_minimal_location <- LOC$answers_correct_minimal_location
+  answers_correct_attempts_location <- LOC$answers_correct_attempts_location
+  answers_correct_wide_location <- LOC$answers_correct_wide_location
+  # ===========================
+  
+  # ===========================
+  # Processing Below here
+  # ===========================
   # Read in the answers file
   answers <- CALC$answer$initial_table(answers_location)
   

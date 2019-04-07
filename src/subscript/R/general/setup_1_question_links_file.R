@@ -1,18 +1,15 @@
-# # ===========================
-# # The "Inputs" to this file
-# # AKA parameters / input file Locations / output file locations
-# # ===========================
-# 
-# # --- parameters ---
-# # none
-# 
-# # --- input file Locations ---
-# answers_location <- LOC$answers_location
-# 
-# # --- output file Locations ---
-# question_links_location <- LOC$question_links_location # "outputs/questions/questions_links.csv"
+setup_question_links <- function() {
+  # ===========================
+  # --- input file Locations ---
+  answers_location <- LOC$answers_location
 
-setup_question_links <- function(answers_location, question_links_location) {
+  # --- output file Locations ---
+  question_links_location <- LOC$question_links_location # "outputs/questions/questions_links.csv"
+  # ===========================
+  
+  # ===========================
+  # Processing Below here
+  # ===========================
   # Read in the answers file
   answers <- CALC$answer$initial_table(answers_location)
   
